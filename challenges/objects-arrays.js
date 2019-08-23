@@ -95,11 +95,19 @@ Name email@example.com
 
 Log the result of your new array. */
 const contactInfo = [];
+for (let i = 0; i < graduates.length; i++) {
+  contactInfo.push(`${graduates[i]["first_name"]} ${graduates[i]["email"]}`);
+   
+}
 console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
+for (let i = 0; i < graduates.length; i++) {
+  if (graduates[i]["university"].includes("Uni")){
+  uni.push(graduates[i].university);
+}}
 console.log(uni);
 
 
@@ -125,6 +133,15 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
+for (let i = 0; i < zooAnimals.length; i++) {
+  animalNames.push(` Name: ${zooAnimals[i]["animal_name"]} Scientific: ${zooAnimals[i]["scientific_name"]}`)}
+  
+//zooAnimals.forEach(animal => animalNames.push(` Name: ${zooAnimals[i]["animal_name"]} Scientific: ${zooAnimals[i]["scientific_name"]}`))
+
+//zooAnimals.forEach(animalFunction);
+//function animalFunction(item){
+//animalNames.push(`${zooAnimals[i]["animal_name"]} ${zooAnimals.scientific_name}`)}
+//;
 console.log(animalNames);
 
 /* Request 2: .map()    
@@ -134,6 +151,7 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 */
 
 const lowerCase = [];
+zooAnimals.map(animal => lowerCase.push(animal["animal_name"].toLowerCase()));
 console.log(lowerCase); 
 
 /* Request 3: .filter() 
