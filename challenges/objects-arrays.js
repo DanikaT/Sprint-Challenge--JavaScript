@@ -136,7 +136,7 @@ const animalNames = [];
 for (let i = 0; i < zooAnimals.length; i++) {
   animalNames.push(` Name: ${zooAnimals[i]["animal_name"]} Scientific: ${zooAnimals[i]["scientific_name"]}`)}
   
-//zooAnimals.forEach(animal => animalNames.push(` Name: ${zooAnimals[i]["animal_name"]} Scientific: ${zooAnimals[i]["scientific_name"]}`))
+//zooAnimals.forEach(animal => animalNames.push(` Name: ${animal.animal_aname} Scientific: ${zooAnimals[i]["scientific_name"]}`))
 
 //zooAnimals.forEach(animalFunction);
 //function animalFunction(item){

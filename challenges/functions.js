@@ -28,7 +28,7 @@ function add(x, y) {
 
 
  function greeting(first, last) {
-  return(`Hello ${first}${last}, nice to meet you!`);
+  return(`Hello ${first} ${last}, nice to meet you!`);
 }
 
 
